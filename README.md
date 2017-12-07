@@ -20,3 +20,5 @@ Accounts:
 	user: nuclos
 	password: [empty]
 </code></pre>
+
+Starting the nuclos java Desktop-Client, you can also use <code>javaws "http://localhost:8417/nuclos/app/webstart.jnlp"</code>.

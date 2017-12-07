@@ -45,4 +45,14 @@ javaws "http://localhost:8417/nuclos/app/webstart.jnlp"
 # admin to database
 docker run -p 5050:5050 --volumes-from pgadmin-volume --link nuclos-db-9.6:POSTGRES \
 	-e PGADMIN_USER=nuclosdata@nuclos -e PGADMIN_PASSWORD=nuclos --name pgadmin -d meedan/pgadmin
+
+# wait 5 seconds nuclos-server startup
+secs=$((1 * 5 ))
+while [ $secs -gt 0 ]; do
+   echo -ne "$secs\033[0K\r"
+   sleep 1
+   : $((secs--))
+done
+
+# open the pgadmin4-Webinterface:
 firefox http://127.0.0.1:5050
