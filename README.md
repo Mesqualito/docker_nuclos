@@ -1,5 +1,4 @@
 # docker_nuclos
-<<<<<<< HEAD
 automation of a nuclos development environment
 =======
 <b>Automation of a nuclos development environment</b>
@@ -21,4 +20,3 @@ Accounts:
 	user: nuclos
 	password: [empty]
 </code></pre>
->>>>>>> e359c77b326a2140026a4e0fb28fe47133c13b5a
